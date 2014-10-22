@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BIO Data &middot; Viewer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Wenzheng Zhu">
+<meta http-equiv="Cache-Control" CONTENT="no-cache">
+<script src="dist/js/smoothie.js"></script>
+<script src="js/dropdown.js"></script>
+<!-- Le styles -->
+<link href="dist/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 5px;
+	padding-bottom: 40px;
+}
+
+/* Custom container */
+.container-narrow {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.container-narrow>hr {
+	margin: 10px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+	margin: 30px 0;
+	text-align: center;
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.jumbotron h1 {
+	font-size: 36px;
+	line-height: 1;
+}
+
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+	margin: 60px 0;
+}
+
+.marketing p+h4 {
+	margin-top: 28px;
+}
+
+.m2m_dm {
+	background: url(DMlogo.png);
+	background-size: 170px 53px;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+}
+</style>
+<link href="dist/css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="dist/js/html5shiv.js"></script>
+    <![endif]-->
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+	href="dist/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+	href="dist/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+	href="dist/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+	href="dist/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="dist/ico/favicon.png">
+</head>
+
+<body>
+
+	<div class="container-narrow">
+
+		<div class="masthead">
+			<ul class="nav nav-pills pull-right">
+			    <li><a href="#">Home</a></li>
+				<li class="active"><a href="#">Data Viwer</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<h3 class="m2m_dm"></h3>
+		</div>
+
+		<hr>
+<div class="dropdown"> Select device:
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+    +8613500220836
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">+8613500220836</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other devices</a></li>
+  </ul>
+</div>
+		<div class="jumbotron">
+			<h1>Realtime data from: +8613500220836</h1>
+			<p class="lead">The following chart display the realtime bio data which is sent by device connected to +8613500220836.</p>
+			<!--a class="btn btn-large btn-success" href="#">Sign up today</a-->
+			<canvas id="smoothie-chart" width="500" height="100"></canvas>
+			<h1>The current emotion for: +8613500220836 </h1>
+			<p class="lead">--Not Detected--</p>
+		</div>
+
+
+		<!-- hr>
+
+		<div class="row-fluid marketing">
+			<div class="span6">
+				<h4>Subheading</h4>
+				<p>Donec id elit non mi porta gravida at eget metus. Maecenas
+					faucibus mollis interdum.</p>
+
+				<h4>Subheading</h4>
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+					Cras mattis consectetur purus sit amet fermentum.</p>
+
+				<h4>Subheading</h4>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non
+					magna.</p>
+			</div>
+
+			<div class="span6">
+				<h4>Subheading</h4>
+				<p>Donec id elit non mi porta gravida at eget metus. Maecenas
+					faucibus mollis interdum.</p>
+
+				<h4>Subheading</h4>
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+					Cras mattis consectetur purus sit amet fermentum.</p>
+
+				<h4>Subheading</h4>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non
+					magna.</p>
+			</div>
+		</div>
+
+		<hr-->
+
+		<div class="footer">
+			<p>&copy; Ericsson 2013-2014 All rights reserved</p>
+		</div>
+
+	</div>
+	<!-- /container -->
+
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="dist/js/jquery.js"></script>
+	<script src="dist/js/bootstrap-transition.js"></script>
+	<script src="dist/js/bootstrap-alert.js"></script>
+	<script src="dist/js/bootstrap-modal.js"></script>
+	<script src="dist/js/bootstrap-dropdown.js"></script>
+	<script src="dist/js/bootstrap-scrollspy.js"></script>
+	<script src="dist/js/bootstrap-tab.js"></script>
+	<script src="dist/js/bootstrap-tooltip.js"></script>
+	<script src="dist/js/bootstrap-popover.js"></script>
+	<script src="dist/js/bootstrap-button.js"></script>
+	<script src="dist/js/bootstrap-collapse.js"></script>
+	<script src="dist/js/bootstrap-carousel.js"></script>
+	<script src="dist/js/bootstrap-typeahead.js"></script>
+	<script type="text/javascript">
+
+      // Random data
+      var line1 = new TimeSeries();
+
+      setInterval(function() {
+        line1.append(new Date().getTime(), 0);
+
+      }, 1000);
+
+      var smoothie = new SmoothieChart({ grid: { strokeStyle: 'rgb(125, 0, 0)', fillStyle: 'rgb(60, 0, 0)', lineWidth: 1, millisPerLine: 250, verticalSections: 6 }, maxValue:10000,minValue:-10000});
+      smoothie.addTimeSeries(line1, { strokeStyle: 'rgb(0, 255, 0)', fillStyle: 'rgba(0, 255, 0, 0.4)', lineWidth: 3 });
+
+
+      smoothie.streamTo(document.getElementById("smoothie-chart"), 1000);
+
+
+    </script>
+</body>
+</html>
+
